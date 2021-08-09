@@ -1,0 +1,6 @@
+.vagrant/
+.idea/
+.cache/
+.config/
+.local/
+.wget-hsts/
