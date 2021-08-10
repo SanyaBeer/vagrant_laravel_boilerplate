@@ -5,7 +5,11 @@ Vagrant.configure("2") do |config|
   config.ssh.password = "vagrant"
   config.ssh.private_key_path = "~/.ssh/id_rsa"
 
-  config.vm.provision :shell, path: "vagrant/bootstrap.sh"
+#   config.vm.provision :shell, path: "vagrant/bootstrap.sh"
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
 
   config.vm.synced_folder ".", "/home/vagrant"
 

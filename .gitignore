@@ -1,6 +1,15 @@
-.vagrant/
-.idea/
+*.log
+.ansible/
+.bash_history
 .cache/
+.composer/
 .config/
+.gnupg/
+.idea/
 .local/
+.ssh/
+.sudo_as_admin_successful
+.vagrant/
 .wget-hsts/
+.wget-hsts
+composer.phar
